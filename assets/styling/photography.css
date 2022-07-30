@@ -1,52 +1,86 @@
-#gallery {
-    line-height:0;
-    -webkit-column-count:5; /* split it into 5 columns */
-    -webkit-column-gap:5px; /* give it a 5px gap between columns */
-    -moz-column-count:5;
-    -moz-column-gap:5px;
-    column-count:5;
-    column-gap:5px;
- }
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
 
- #gallery img {
-    filter: grayscale(100%);
-    width: 100% !important;
-    height: auto !important;
-    margin-bottom:5px; /* to match column gap */
- }
+body {
+	margin: 0;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #707070;
+	background-color: #333;
+}
 
- #gallery img:hover {
-    filter:none;
- }
+.container {
+	margin: 0 auto;
+	max-width: 700px;
+	max-height: 100vh;
+	background-color: white;
+}
 
- @media (max-width: 1200px) {
-    #gallery {
-     -moz-column-count:    4;
-     -webkit-column-count: 4;
-     column-count:         4;
-    }
- }
 
- @media (max-width: 1000px) {
-    #gallery {
-     -moz-column-count:    3;
-     -webkit-column-count: 3;
-     column-count:         3;
-    }
- }
+/* Useful Classes */
+.xy-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
- @media (max-width: 800px) {
-    #gallery {
-     -moz-column-count:    2;
-     -webkit-column-count: 2;
-     column-count:         2;
-    }
- }
+.transition {
+	transition: all 350ms ease-in-out;
+}
 
- @media (max-width: 400px) {
-    #gallery {
-     -moz-column-count:    1;
-     -webkit-column-count: 1;
-     column-count:         1;
-    }
- }
+.r-3-2 {
+	width: 100%;
+	padding-bottom: 66.667%;
+	background-color: #ddd;
+}
+
+.image-holder {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* Main Styles */
+.gallery-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.gallery {
+	position: relative;
+	white-space: nowrap;
+	font-size: 0;
+}
+
+.item-wrapper {
+	cursor: pointer;
+	width: 23%; /* arbitrary value */
+	display: inline-block;
+	background-color: white;
+}
+
+.gallery-item { opacity: 0.5; }
+.gallery-item.active { opacity: 1; }
+
+.controls {
+	font-size: 0;
+	border-top: none;
+}
+.move-btn {
+	display: inline-block;
+	width: 50%;
+	border: none;
+  color: #ccc;
+	background-color: transparent;
+	padding: 0.2em 1.5em;
+}
+.move-btn:first-child {border-right: none;}
+.move-btn.left  { cursor: w-resize; }
+.move-btn.right { cursor: e-resize; }
+
