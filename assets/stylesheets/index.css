@@ -1,20 +1,20 @@
 @font-face {
     font-family: SFBold;
-    src: url(assets/SF-Pro-Display-Bold.otf);
+    src: url(../static/SF-Pro-Display-Bold.otf);
 }
 
 @font-face {
     font-family: SFText;
-    src: url(assets/SF-Pro-Text-Regular.otf);
+    src: url(../static/SF-Pro-Text-Regular.otf);
 }
 
 @font-face {
     font-family: Printvetica;
-    src: url(assets/Printvetica.otf);
+    src: url(../static/Printvetica.otf);
 }
 
 body {
-    background-image: url(assets/donda-house-07.webp);
+    background-image: url(../static/donda-house-07.webp);
     color: fcfbfc;
 }
 
