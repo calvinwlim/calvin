@@ -14,14 +14,19 @@
 }
 
 body {
-    background-image: url(../static/donda-house-07.webp);
+    background-image: url(../static/desktop.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: fcfbfc;
 }
-
+p {
+  color: white
+}
 h1 {
     text-align: center;
     font-family: Printvetica;
     font-size: 25px;
+    color: white
 }
 
 .header {
@@ -64,7 +69,8 @@ h1 {
 
 .file-icon img {
     width: 65px;
-    display: block;
+    display: inline-block;
+    position: relative;
     margin: 0 auto;
 }
 
