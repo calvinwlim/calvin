@@ -4,8 +4,8 @@
   --header-height: 3rem;
   --font-semi: 600;
   --hue-color: 224;
-  --first-color: #ffa200;
-  --second-color: #d5bdaf;
+  --first-color: #F4CE14;
+  --second-color: #495E57;
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
@@ -31,7 +31,7 @@
 /*===== BASE =====*/
 *, ::before, ::after {
   box-sizing: border-box;
-  background-color: #000814;
+  background-color: #F5F7F8;
 }
 
 html {
@@ -56,7 +56,7 @@ ul {
 }
 
 a {
-  color: #ffa200;
+  color: #F4CE14;
   text-decoration: none;
 }
 
@@ -105,7 +105,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #000814;
+  background-color: #F5F7F8;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
@@ -350,6 +350,8 @@ img {
   color: var(--second-color);
   margin-top: var(--mb-4);
   margin-bottom: var(--mb-4);
+  margin-left: var(--mb-4);
+  margin-right: var(--mb-4);
 }
 
 .contact__input {
@@ -373,7 +375,7 @@ img {
 }
 
 .footer {
-  background-color: #000814;
+  background-color: #F5F7F8;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
