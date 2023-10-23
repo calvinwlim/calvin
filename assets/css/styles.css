@@ -126,7 +126,7 @@ img {
     height: 100%;
     padding: 2rem;
     background-color: var(--second-color);
-    transition: .3s;
+    transition: .1s;
   }
 }
 
@@ -236,7 +236,7 @@ img {
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
-  transition: .3s;
+  transition: .1s;
 }
 
 .button:hover {
@@ -339,7 +339,7 @@ img {
 }
 
 .work__img img {
-  transition: 1s;
+  transition: .3s;
 }
 
 .work__img img:hover {
@@ -376,7 +376,7 @@ img {
 
 .footer {
   background-color: #F5F7F8;
-  color: #fff;
+  color: #495E57;
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
@@ -393,7 +393,7 @@ img {
 
 .footer__icon {
   font-size: 1.5rem;
-  color: #fff;
+  color: #495E57;
   margin: 0 var(--mb-2);
 }
 
